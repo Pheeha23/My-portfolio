@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background: linear-gradient(0deg, rgba(10,1,4,1) 41%, rgba(34,74,195,1) 100%);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+    color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77a6f7 1px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background: gold;
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.service-button {
+    background: rgb(183, 186, 187);
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('heroBG.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    height: 100%;
+    font-weight: 600;
+}
+
+#hero .hero-content {
+    padding: 14rem;
+}
+
+#features {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: #000000;
+    border-radius: 5px;
+}
+
+.feature img {
+    width: 100%;
+    height: 250px;
+    border-radius: 91% 9% 100% 0% / 30% 43% 57% 70% ;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.about-text {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: antiquewhite;
+    text-align: center;
+    width: 50%;
+    padding-left: 30px;
+}
+.picture{
+    border-radius: 91% 9% 100% 0% / 30% 43% 57% 70% ;
+}
+#testimonials {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 300px;
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #7dc0db;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007BFF; 
+}
+
+.contact {
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    color: aqua;
+    border: 2px solid rgb(128, 0, 255);
+    background: url('heroBG.jpg') no-repeat center center/cover;
+
+   
+/* From https://css.glass */
+background: rgba(91, 160, 229, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+border: 1px solid rgba(91, 160, 229, 0.86);
+}
+
+.contact-container {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-top-color: rgb(0, 255, 255);
+    background: rgb(227, 47, 255);
+}
+
+footer {
+    background: linear-gradient(0deg, rgba(10,1,4,1) 63%, rgba(122,34,195,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: #77a6f7 3px solid;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 90%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #hero .hero-content {
+        padding: 4rem 0;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+}

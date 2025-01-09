@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="service3.jpeg" type="image/x-icon">
+    <link rel="icon" href="bglogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="header-hero">
+        <div class="container">
+            <h1 class="logo">
+                <img class="logo-img" src="bglogo.jpg" alt="Logo" style="height: 50px; width: auto; vertical-align: middle; margin-right: 10px;">
+                SPRING
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <input type="search" placeholder="search ">
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Quality Water for Every Household</h1>
+            <p>Your reliable source of clean and safe water in Pretoria, Soshanguve.</p>
+            <a href="#cart" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img class="picture" src="IMG-20240930-WA0062.jpg" alt="my picture">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to SPRING water store, your trusted partner in providing essential hydration solutions. We are dedicated to delivering high-quality water products to meet the needs of our community, especially during challenging times of water shortages.</p>
+                <p>Our mission is to ensure every household has access to clean, safe water. We offer a variety of products tailored to fit your lifestyle, whether for daily consumption or special occasions.</p>
+                <p>At SPRING Water Store, we pride ourselves on exceptional customer service. Our knowledgeable team is here to assist you in finding the right products and ensuring your satisfaction.</p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459951.5958943779!2d27.868295206970092!3d-25.758278768530836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4c!2sPretoria!5e0!3m2!1sen!2sza!4v1727690201307!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Visit our social media platforms</h3>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Our Products</h2>
+        <div class="container">
+            <div class="feature">
+                <img src="pure still water.jpg" alt="Pure Still Water">
+                <h3>Pure Still Water</h3>
+                <p>Refreshingly clean and crisp, our Pure Still Water is sourced from natural springs. It's free from impurities, ensuring that you stay hydrated and revitalized throughout the day. Ideal for everyday hydration.</p>
+                <a href="#features" class="service-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <img src="alkaline water.jpg" alt="Coconut Water">
+                <h3>Alkaline Water</h3>
+                <p>Experience the natural sweetness of our Alkaline water, packed with electrolytes and essential nutrients. Perfect for rehydration after workouts or as a refreshing drink any time of day.</p>
+                <a href="#features" class="service-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <img src="5 gallon water jug.jpg" alt="5-Gallon Water Jug">
+                <h3>5-Gallon Water Jug</h3>
+                <p>Convenient and practical, our 5-Gallon Water Jug is perfect for homes and offices. It provides a steady supply of fresh water, making it easy to keep everyone hydrated.</p>
+                <a href="#features" class="service-button">Learn More</a>
+            </div>
+            <div class="feature">
+                <img src="water 2.jpg" alt="Flavored Sparkling Water">
+                <h3>Flavored Sparkling Water</h3>
+                <p>Convenient and practical, our Flavored Sparkling Water is perfect for homes and offices. It provides a steady supply of fresh water, making it easy to keep everyone hydrated.</p>
+                <a href="#features" class="service-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="products">
+            <h2>Products Price List</h2>
+            <ul id="product-list">
+                <li>Pure Spring Water - R1.00</li>
+                <li>Mineral Water - R1.50</li>
+                <li>Flavored Sparkling Water - R2.00</li>
+                <li>Coconut Water - R2.50</li>
+                <li>Alkaline Water - R2.00</li>
+                <li>Water Bottles (24-pack) - R20.00</li>
+                <li>5-Gallon Water Jug - R15.00</li>
+            </ul>
+        </section>
+        <section id="cart">
+            <h2> Cart</h2>
+            <form id="cart-form" onsubmit="return addToCart(event)">
+                <label for="product-name">Product:</label>
+                <select id="product-name" name="product-name">
+                    <option value="pure-spring-water" data-price="1.00">Pure Spring Water - R1.00</option>
+                    <option value="mineral-water" data-price="1.50">Mineral Water - R1.50</option>
+                    <option value="flavored-sparkling-water" data-price="2.00">Flavored Sparkling Water - R2.00</option>
+                    <option value="coconut-water" data-price="2.50">Coconut Water - R2.50</option>
+                    <option value="alkaline-water" data-price="2.00">Alkaline Water - R2.00</option>
+                    <option value="water-bottles-24-pack" data-price="20.00">Water Bottles (24-pack) - R20.00</option>
+                    <option value="five-gallon-jug" data-price="15.00">5-Gallon Water Jug - R15.00</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                <button type="submit" id="add-to-cart">Add to Cart</button>
+                <button type="button" id="clear-cart" onclick="clearCart()">Clear Cart</button>
+                
+                <ul id="cart-items">
+                    <li>Pure Spring Water (2) - R2.00</li>
+                    <li>Mineral Water (1) - R1.50</li>
+                </ul>
+                
+                <p id="total">Total: R3.50</p>
+            </form>
+        </section>
+        
+        <section id="provider">
+            <h2>Provider Dashboard</h2>
+            <form id="provider-form">
+                <label for="provider-name">Name:</label>
+                <input type="text" id="provider-name" name="provider-name">
+                <label for="provider-location">Location:</label>
+                <input type="text" id="provider-location" name="provider-location">
+                <label for="provider-price">Price:</label>
+                <input type="number" id="provider-price" name="provider-price">
+                <button type="submit" id="update-provider">Update</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="contact">
+        <div class="contact-container">
+            <section class="contact">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>We are here to assist you. Please fill out the form below to get in touch:</p>
+                    <form class="contact-form">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required placeholder="your name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="username@gmail.com"><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <input type="submit" name="submit" value="submit" id="submit" />
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+
+    <footer>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; <a href="menu" style="text-decoration: none;">Spring</a> - All rights reserved 2024</p>
+    </footer>
+</body>
+</html>
